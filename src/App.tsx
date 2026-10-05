@@ -311,7 +311,6 @@ function BottomNav({
             key={id}
 
             onClick={() => onSelect(id)}
-
           >
 
             <span className={active === id ? "rounded-xl bg-blue-50 px-3 py-1" : "px-3 py-1"}>{icon}</span>

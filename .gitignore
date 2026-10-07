@@ -2,7 +2,9 @@ node_modules/
 dist/
 build/
 .cache/
+.npm-cache/
 .env*
+!.env.example
 .vite/
 vite.config.*.timestamp-*
 *.tsbuildinfo

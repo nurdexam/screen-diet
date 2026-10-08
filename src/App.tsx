@@ -98,6 +98,7 @@ function AuthScreen({ startupError, onRetry }: { startupError?: string; onRetry?
         )}
         {creatingAccount && (
           <label className="mt-6 block text-sm font-bold text-slate-700">
+            
             Name
             <input autoComplete="name" className="mt-2 min-h-12 w-full rounded-xl border border-slate-200 px-4" maxLength={80} onChange={(event) => setName(event.target.value)} required value={name} />
           </label>

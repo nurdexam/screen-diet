@@ -1,5 +1,4 @@
-import { auth, pool } from "../auth";
-import { toVercelHandler } from "../server/vercel-handler";
+import { auth, pool } from "../auth.js";
 
 export const fetch = async (request: Request) => {
     if (request.method !== "POST") return Response.json({ error: "Method not allowed." }, { status: 405 });
@@ -36,4 +35,4 @@ export const fetch = async (request: Request) => {
     }
 };
 
-export default toVercelHandler(fetch);
+export default { fetch };

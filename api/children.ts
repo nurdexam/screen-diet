@@ -1,5 +1,4 @@
-import { auth, pool } from "../auth";
-import { toVercelHandler } from "../server/vercel-handler";
+import { auth, pool } from "../auth.js";
 
 type ChildInput = { name?: unknown; age?: unknown; childId?: unknown };
 
@@ -66,4 +65,4 @@ export const fetch = async (request: Request) => {
   }
 };
 
-export default toVercelHandler(fetch);
+export default { fetch };
